@@ -1,0 +1,111 @@
+:root{
+	
+	--block-bg: #E4E4E4;
+	
+}
+
+body{
+	
+	background: url(/src/img/bodybg.png);
+	/* 背景图垂直、水平均居中 */
+	background-position: center center;
+	/* 背景图不平铺 */
+	background-repeat: no-repeat;
+	/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+	background-attachment: fixed;
+	/* 让背景图基于容器大小伸缩 */
+	background-size: cover;
+	/* 设置背景颜色，背景图加载过程中会显示背景色 */
+	background-color: white;
+}
+
+.title{
+	
+	text-align: center;
+	margin-top: 30px;
+	
+}
+
+.lists{
+
+	padding-top: 2px;
+	padding-right: 11%;
+	padding-bottom: 2px;
+	padding-left: 11%;
+
+}
+
+.lists-h2{
+	
+	margin-top: 20px;
+	display: block;
+	
+}
+
+.flex{
+	
+	display: flex;
+	
+}
+
+.block-button{
+	
+	width: 100%;
+	height: 160px;
+	margin: 7px;
+	padding: 30px 15px;
+	background-size: 100% auto;
+	text-align: center;
+	align-items: center;
+	justify-content:space-between;
+	color: black;
+	background-size:cover;
+	-webkit-background-size:cover;
+	-o-background-size:cover;
+	background-color: rgb(301,301,301,0.5);
+	border-radius: 7px;
+	box-shadow: 0px 0px 2px black;
+	
+}
+         
+.btitle{
+	
+	opacity: 1;
+	
+}
+
+@media (min-width: 500px){
+
+	.lists-h2{
+		
+		text-align: center;
+		
+	}
+	.block-button{
+		
+		width: 70%;
+		
+	}
+
+}
+@media (prefers-color-scheme: dark) {
+	
+		
+	body{
+		
+		background: url(/src/img/bodybgd.png)!important;
+		/* 背景图垂直、水平均居中 */
+		background-position: center center!important;
+		/* 背景图不平铺 */
+		background-repeat: no-repeat!important;
+		/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+		background-attachment: fixed!important;
+		/* 让背景图基于容器大小伸缩 */
+		background-size: cover!important;
+	
+		/* 设置背景颜色，背景图加载过程中会显示背景色 */
+		background-color: #464646;
+	}
+
+	
+}

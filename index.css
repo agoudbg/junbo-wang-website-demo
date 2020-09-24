@@ -6,17 +6,13 @@
 
 body{
 	
-	background: url(/src/img/bodybg.png);
-	/* 背景图垂直、水平均居中 */
-	background-position: center center;
-	/* 背景图不平铺 */
-	background-repeat: no-repeat;
-	/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
-	background-attachment: fixed;
-	/* 让背景图基于容器大小伸缩 */
+	background: url(src/img/bodybg.png) no-repeat center center fixed;
+	/*兼容浏览器版本*/
+	-webkit-background-size: cover;
+	-o-background-size: cover;                
 	background-size: cover;
-	/* 设置背景颜色，背景图加载过程中会显示背景色 */
-	background-color: white;
+	
+background-color: white;
 }
 
 .title{
@@ -71,7 +67,7 @@ body{
 	backdrop-filter: saturate(100%) blur(10px);
 	-webkit-backdrop-filter: saturate(120%) blur(25px);
     background-color: rgba(255,255,255,0.72);
-	cursor: url('/src/img/pointer.png'),default;
+	cursor: pointer;
 	transition: all 0.11s;
 	-moz-transition:all 0.11s;
 	-webkit-transition: all 0.11s;
@@ -83,7 +79,22 @@ body{
 
 	box-shadow: 0px 0px 4px black; 
 	background-color: rgba(255,255,255,0.2);
+	transform:scale(0.99);
+	-ms-transform:rotate(0.99); 	/* IE 9 */
+	-moz-transform:rotate(0.99); 	/* Firefox */
+	-webkit-transform:rotate(0.99); /* Safari 和 Chrome */
+	-o-transform:rotate(0.99); 	/* Opera */
+      
+}	
+	   
+.block-button:active{
 
+		transform:scale(0.97);
+		-ms-transform:rotate(0.97); 	/* IE 9 */
+		-moz-transform:rotate(0.97); 	/* Firefox */
+		-webkit-transform:rotate(0.97); /* Safari 和 Chrome */
+		-o-transform:rotate(0.97); 	/* Opera */
+      
 }	
 	
 		 
@@ -103,6 +114,7 @@ body{
 	float: left;
 	height: 60px;
 	margin: 22px 5px -4px 0;
+	border-radius: 10px;
 	
 }
 .web-icon{
@@ -118,10 +130,10 @@ body{
 	white-space: nowrap;
     /* text-overflow: ellipsis; */
     overflow: hidden;
-    word-break: break-all;
+    /* word-break: break-all; */
 	display: inline;
-	webkit-line-clamp: 1;
-	line-clamp: 1;
+	/* webkit-line-clamp: 1; */
+	/* line-clamp: 1; */
 }
 
 .burl:hover{
@@ -133,7 +145,7 @@ body{
 
 .bintro{
 	
-	margin-top: 7px;
+	margin-top: 14px;
 	text-overflow: -o-ellipsis-lastline;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -197,16 +209,7 @@ body{
 		
 	body{
 		
-		background: url(/src/img/bodybgd.png)!important;
-		/* 背景图垂直、水平均居中 */
-		background-position: center center!important;
-		/* 背景图不平铺 */
-		background-repeat: no-repeat!important;
-		/* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
-		background-attachment: fixed!important;
-		/* 让背景图基于容器大小伸缩 */
-		background-size: cover!important;
-	
+		background: url(/src/img/bodybgd.png)no-repeat center center fixed!important;
 		/* 设置背景颜色，背景图加载过程中会显示背景色 */
 		background-color: #464646;
 	}

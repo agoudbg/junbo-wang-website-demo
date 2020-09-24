@@ -67,13 +67,26 @@ body{
 	-o-background-size:cover;
 	/* background-color: rgb(250,250,250,0.23); */
 	border-radius: 4px;
-	/* box-shadow: 0px 0px 1px black;           */
+	box-shadow: 0px 0px 1px black;          
 	backdrop-filter: saturate(100%) blur(10px);
 	-webkit-backdrop-filter: saturate(120%) blur(25px);
-    /* background-color: rgba(255,255,255,0.72); */
+    background-color: rgba(255,255,255,0.72);
+	cursor: url('/src/img/pointer.png'),default;
+	transition: all 0.11s;
+	-moz-transition:all 0.11s;
+	-webkit-transition: all 0.11s;
+	-o-transition: all 0.11s;
 	
 }
          
+.block-button:hover{
+
+	box-shadow: 0px 0px 4px black; 
+	background-color: rgba(255,255,255,0.2);
+
+}	
+	
+		 
 .btitle{
 	
 	font-size: 24px;
@@ -196,6 +209,12 @@ body{
 	
 		/* 设置背景颜色，背景图加载过程中会显示背景色 */
 		background-color: #464646;
+	}
+	
+	.block-button{
+		
+		background-color: rgba(52,50,50,0.7);
+		
 	}
 	.btitle,.bintro{
 		

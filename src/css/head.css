@@ -47,9 +47,11 @@
 			color:black;
 		}
 		.map-link div{
-			background-color:none;
+			background-color:none!important;
 			text-decoration:none;
 			color:black;
+			backdrop-filter: none!important;
+			
 		}
 
 		@media (prefers-color-scheme: dark) {
@@ -90,9 +92,10 @@
 				color:white;
 			}
 			.map-link div{
-				background-color:none;
+				background-color:none!important;
 				text-decoration:none;
 				color:white;
+				backdrop-filter: none!important;
 			}
 			
 			.icon {

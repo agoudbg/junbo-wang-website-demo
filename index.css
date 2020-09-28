@@ -164,17 +164,30 @@
 	
 }
 
-#contactways{
+.contactways{
+	
+	display: inline-block;
+	
+}
+
+
+.contact-button{
 	
 	display: inline;
+	padding: 11px 6px 8px 8px;
+	margin: 5px;
+	font-size: 16px;
+	font-weight: bold;
 	
 }
 
 .contact-img{
 	
-	float: left;
-	width: 24px;
-	height: 24px;
+	/* float: left; */
+	width: 25px;
+	height: 25px;
+	padding: 2px 9px 2px 1px;
+	margin-bottom: -7px;
 	
 }
 	

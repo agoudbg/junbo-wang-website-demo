@@ -4,7 +4,17 @@ function showad(follow, divid, type){
 	document.cookie="username=John Doe; expires=Thu, 18 Dec 2043 12:00:00 GMT; path=/";
 	// document.write(document.cookie);
 	if (getCookie("noad")==""){
-		document.writeln("<script async src=\'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\'></script><ins class=\'adsbygoogle\'style=\'display:block\'data-ad-client=\'ca-pub-5639925822995109\'data-ad-slot=\'\'+ad_types[type]+\'\'data-ad-format=\'auto\'data-full-width-responsive=\'true\'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>");
+document.writeln("");
+document.writeln("<script async src=\'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\'></script>");
+document.writeln("<!-- 通用正方形展示广告 -->");
+document.writeln("<ins class=\'adsbygoogle\'");
+document.writeln("     style=\'display:block;width:100%;height:50px\'");
+document.writeln("     data-ad-client=\'ca-pub-5639925822995109\'");
+document.writeln("     data-ad-slot=\'7888411968\'");
+document.writeln("     data-full-width-responsive=\'false\' s></ins>");
+document.writeln("<script>");
+document.writeln("     (adsbygoogle = window.adsbygoogle || []).push({});");
+document.writeln("</script>");
 		return 0;
 		
 	}

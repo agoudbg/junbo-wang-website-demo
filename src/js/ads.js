@@ -4,7 +4,7 @@ function showad(follow, divid, type){
 	document.cookie="username=John Doe; expires=Thu, 18 Dec 2043 12:00:00 GMT; path=/";
 	document.write(document.cookie);
 	if (getCookie("noad")==""){
-		document.writeln("<script async src=\'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\'></script><ins class=\'adsbygoogle\'style=\'display:block\'data-ad-client=\'ca-pub-5639925822995109\'data-ad-slot=\'\'+ad_types[type]+\'\'data-ad-format=\'auto\'data-full-width-responsive=\'true\'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>");
+	divid.innerHTML=("<script async src=\'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\'></script><ins class=\'adsbygoogle\'style=\'display:block\'data-ad-client=\'ca-pub-5639925822995109\'data-ad-slot=\'\'+ad_types[type]+\'\'data-ad-format=\'auto\'data-full-width-responsive=\'true\'></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>");
 		return 0;
 		
 	}

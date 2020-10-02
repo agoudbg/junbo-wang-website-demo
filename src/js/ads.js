@@ -1,8 +1,8 @@
 ad_types=[/* 正方形 */"7888411968", /* 横向 */"8287867219", ];
 function showad(follow, divid, type){
 	
-	document.cookie="username=John Doe; expires=Thu, 18 Dec 2043 12:00:00 GMT; path=/";
-	
+	document.cookie="username=John Doe; expires=Thu, 18 Dec 2043 12:00:00 GMT; path=//junbo.wang";
+	document.write(document.cookie);
 	
 	
 	

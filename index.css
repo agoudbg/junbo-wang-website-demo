@@ -14,6 +14,7 @@
 	left: 0;
 	background: url('https://p.pstatp.com/origin/13855000114d66d5f4c38') center 0 no-repeat;
 	background-size: cover;
+
 }
 
 .title{
@@ -97,12 +98,12 @@
 	   
 .button:active{
 
-		transform:scale(0.97);
-		-ms-transform:rotate(0.97); 	/* IE 9 */
-		-moz-transform:rotate(0.97); 	/* Firefox */
-		-webkit-transform:rotate(0.97); /* Safari 和 Chrome */
-		-o-transform:rotate(0.97); 	/* Opera */
-      
+	transform:scale(0.97);
+	-ms-transform:rotate(0.97); 	/* IE 9 */
+	-moz-transform:rotate(0.97); 	/* Firefox */
+	-webkit-transform:rotate(0.97); /* Safari 和 Chrome */
+	-o-transform:rotate(0.97); 	/* Opera */
+  
 }	
 	
 		 
@@ -125,10 +126,12 @@
 	border-radius: 10px;
 	
 }
+
 .web-icon{
 	
 	margin-bottom: -2px;
 	fill: #707070;
+	
 }
 
 .burl{
@@ -142,6 +145,7 @@
 	display: inline;
 	/* webkit-line-clamp: 1; */
 	/* line-clamp: 1; */
+	
 }
 
 .burl:hover{
@@ -169,7 +173,6 @@
 	display: inline-block;
 	
 }
-
 
 .contact-button{
 	

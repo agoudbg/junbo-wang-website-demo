@@ -19,7 +19,7 @@ function putblock(type, output){
 		}
 	
 		else if(type=="contact"){
-			document.getElementById(output).innerHTML+="<div class='button contact-button' title='"+single[1]+"'onclick='"+single[3]+"'><img class='contact-img' src='/src/img/contact-icons/"+single[0]+".png'>"+single[2]+"</img></div>";
+			document.getElementById(output).innerHTML+="<div class='button contact-button' title='"+single[1]+"'onclick='"+single[3]+"'><img class='contact-img' src='/src/img/contact-icons/"+single[0]+".PNG'>"+single[2]+"</img></div>";
 		}
 	}
 }

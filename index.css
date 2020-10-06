@@ -175,6 +175,8 @@
 	border-radius: 60px;
 	padding: 6px;
 	display: inline;
+	margin-right: 6px;
+	margin-top: 10px;
 }
 
 .contactways{
@@ -289,6 +291,12 @@
 	}
 	
 
+	#myavatar{
+		
+		width: 60px;
+		height: 60px;
+		
+	}
 
 }
 @media (min-width: 600px){

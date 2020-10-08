@@ -44,3 +44,14 @@ function getCookie(cname)
   }
   return "";
 }
+if ( typeof(window.google_jobrunner) != 'object' ){
+// AdSense js not loaded
+// AdBlock detected
+}
+
+
+window.setTimeout(function(){
+if(adsbygoogle instanceof Array) {
+// AdSense js not loaded
+// AdBlock detected
+} }, 2000);

@@ -182,18 +182,18 @@ black{
 	background-color: black;
 	
 }
+black:active, black:hover{
+	
+	color: white;
+
+	
+}
 .contactways{
 	
 	display: inline-block;
 	
 }
 
-black:hover{
-	
-	color: white;
-
-	
-}
 .contactways{
 	
 	display: inline-block;

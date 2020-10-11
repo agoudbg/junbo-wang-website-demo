@@ -7,7 +7,12 @@ body{
 body {
 	font-family:PingFangSC-Regular;	
 }
-
+.title{
+	
+	text-align: center;
+	margin-top: 30px;
+	
+}
 a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):not(.card-seemore):link{
 	text-decoration:none;
 	color:blue;
@@ -41,6 +46,52 @@ a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):not(.card-seemore):vis
 	margin-right:-8px;
 
 }
+
+.button{
+	
+	backdrop-filter: saturate(120%) blur(25px);
+	-webkit-backdrop-filter: saturate(120%) blur(25px);
+    background-color: rgba(255,255,255,0.72);
+	cursor: pointer;
+	transition: all 0.11s;
+	-moz-transition:all 0.11s;
+	-webkit-transition: all 0.11s;
+	-o-transition: all 0.11s;
+	
+	
+}
+.button:hover{
+
+	box-shadow: 0px 0px 4px black; 
+	background-color: rgba(255,255,255,0.2);
+	transform:scale(0.99);
+	-ms-transform:rotate(0.99); 	/* IE 9 */
+	-moz-transform:rotate(0.99); 	/* Firefox */
+	-webkit-transform:rotate(0.99); /* Safari 和 Chrome */
+	-o-transform:rotate(0.99); 	/* Opera */
+      
+}	
+	   
+.button:active{
+
+	transform:scale(0.97);
+	-ms-transform:rotate(0.97); 	/* IE 9 */
+	-moz-transform:rotate(0.97); 	/* Firefox */
+	-webkit-transform:rotate(0.97); /* Safari 和 Chrome */
+	-o-transform:rotate(0.97); 	/* Opera */
+  
+}	
+	
+.flex{
+	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+
+
+		 
 @media (prefers-color-scheme: dark) {
 	body {
 		color: white;
@@ -48,14 +99,14 @@ a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):not(.card-seemore):vis
 	}
 	a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):link{
 		text-decoration:none;
-		color:#00B0F0;
+		color:#00B0F0!important;
 	}
 	a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):hover{
 		text-decoration:underline;
-		color:#00B0F0;
+		color:#00B0F0!important;
 	}
 	a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):visited{
-		color:#00B0F0;
+		color:#00B0F0!important;
 		text-decoration:none;
 	}
 	.force{
@@ -76,13 +127,10 @@ a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):not(.card-seemore):vis
 		
 		background-color:#595959;
 	}
+	
+	.button{
+		
+		background-color: rgba(52,50,50,0.7);
+		
+	}
 }
-.dplayer-logo{
-	pointer-events: none;
-    position: absolute;
-    left: auto;
-	right: 6%;
-    top: 7%;
-	width: 17%;
-    max-width: 10000px;
-    max-height: 10000px;

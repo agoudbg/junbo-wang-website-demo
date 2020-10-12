@@ -26,15 +26,29 @@
 <!-- 因为现在就广告一个设置功能就糊弄一下，系统性的…在做了在做了 -->
 		<div id="hcont"></div>
 		<div id="bodybg"></div>
+		
 		<h1 class="title">设置</h1>
 		<div id="settings-container">
 			<div id="settings">
-				<h2 id="common" class="setting-h2">广告</h2>
+				<h2 id="account" class="setting-h2">账户</h2>
+				<p class="setting-text">此功能开发中，预计2021年7月上线。</p>
+				<h2 id="gexinhua" class="setting-h2">个性化</h2>
+				<div class="setting-button">
+					<p>展示Android样式顶栏（开发中）</p>
+					<label for=""><input type="checkbox" name="" id="showandroidbutton" class="a-switch"></label>
+				</div>		
+				<p class="setting-text">对于不支持模糊特效的浏览器，此选项可能非常有用。部分顶栏可能不受此设置影响。 </p>
+				<div class="setting-button">
+					<p>展示live2d看板娘（开发中）</p>
+					<label for=""><input type="checkbox" name="" id="live2dbutton" class="a-switch"></label>
+				</div>	
+				<p class="setting-text">在电脑端打开看板娘。部分网站可能不受此设置影响。 </p>
+				<h2 id="ads" class="setting-h2">广告</h2>
 				<div class="setting-button">
 					<p>关闭网站广告</p>
-					<label for=""><input type="checkbox" name="" id="" class="a-switch"></label>
+					<label for=""><input type="checkbox" name="" id="closeadbutton" class="a-switch"></label>
 				</div>							
-				<p class="setting-text">此选项控制junbo.wang及旗下网站上由广告平台提供的广告是否展示。<br />展示这些广告是junbo.wang获取收益的重要渠道。如果您认为这些广告影响您的体验，您可以在这里将其关闭1个月。<br />鉴于我们提供了方便的关闭渠道，我们强烈抗议在浏览我们网站时使用诸如Adblock的广告屏蔽插件。它们不仅不一定能去除广告，还会对网站的布局带来糟透了的影响。在极端情况下，junbo.wang会显示更长的提示文本引导您停用这些插件。如果您仍打开了这些插件，则可能影响到在此页关闭广告。<br />请注意：若您未登录Junbo账号，关闭或清除Cookie、在无痕模式下浏览、更换浏览器或设备、启用广告屏蔽插件等操作均可能导致此设置被重置。 <p>
+				<p class="setting-text">此选项控制junbo.wang及旗下网站上由广告平台提供的广告是否展示。<br />展示这些广告是junbo.wang获取收益的重要渠道。如果您认为这些广告影响您的体验，您可以在这里将其关闭1个月。<br />鉴于我们提供了方便的关闭渠道，我们强烈抗议在浏览我们网站时使用诸如Adblock的广告屏蔽插件。它们不仅不一定能去除广告，还会对网站的布局带来糟透了的影响。在极端情况下，junbo.wang会显示更长的提示文本引导您停用这些插件。如果您仍打开了这些插件，则可能影响到在此页关闭广告。<br />请注意：若您未登录Junbo账号，关闭或清除Cookie、在无痕模式下浏览、更换浏览器或设备、启用广告屏蔽插件等操作均可能导致此设置被重置。 </p>
 				
 			</div>
 		</div>
@@ -43,6 +57,7 @@
 		<div id="fcont"></div>
 	</body>
 		<script src="/src/js/header.js"></script>
+		<script src="/src/js/settings.js"></script>
 
 		
 

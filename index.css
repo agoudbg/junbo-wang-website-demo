@@ -143,9 +143,16 @@ black:active, black:hover{
 
 	
 }
-.contactways{
+.myinfo p{
 	
-	display: inline-block;
+	margin-bottom: -3px;
+	
+}
+
+
+.mytable{
+	
+	margin-bottom: 8px;
 	
 }
 

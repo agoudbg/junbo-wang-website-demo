@@ -11,7 +11,7 @@ body {
 	
 	text-align: center;
 	margin-top: 30px;
-	
+	 
 }
 a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):not(.card-seemore):link{
 	text-decoration:none;

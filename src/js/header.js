@@ -6,9 +6,9 @@ function loadc(name) {
     xhr.send(null);
     return xhr.status === okStatus ? xhr.responseText : null;
 }
-c=loadc("/header.html");
+c=loadc("/src/template/header.html");
 hcont.innerHTML=c;
-c=loadc("/footer.html");
+c=loadc("/src/template/footer.html");
 fcont.innerHTML=c;
 			var sit=0;
 			function go() {

@@ -12,6 +12,7 @@
 		<meta name='format-detection' content='telephone=no'>
 		<!-- 样式 -->
 		<link rel="stylesheet" type="text/css" href="/src/css/common.css">
+		<!-- <link rel="stylesheet" type="text/css" href="/src/css/friend.css"> -->
 		<link rel="stylesheet" type="text/css" href="index.css">
 		<script src="//cdn.junbo.wang/ads.js"></script>
 
@@ -26,7 +27,7 @@
 
 		<div id="hcont"></div>
 		<div id="bodybg"></div>
-		<h1 class="title">欢迎来到junbo.wang</h1>
+		<h1 class="title">欢迎来到 junbo.wang</h1>
 		
 		<div class="lists">
 			<h2 class="lists-h2">主要的网站</h2>
@@ -43,9 +44,9 @@
 			<h2 class="lists-h2">关于我</h2>
 			<div>
 				
-				<table><tr><td valign="top">
+				<table class="mytable"><tr><td valign="top">
 					<img class="button" id="myavatar" src="/src/img/nick.jpg" onclick="alert('别戳了，这儿什么都没有');">	
-				</td><td>
+				</td><td class="myinfo">
 				
 					<p>高三电脑菜鸡一枚</p>
 					<p>啥都不懂，啥都会一点</p>
@@ -71,8 +72,20 @@
 		</script>
 		
 		<div class="lists">
+			<h2 class="lists-h2">友情链接</h2>
+			<p class="lists-p"><small><a href="https://www.wjx.top/jq/93457953.aspx" target="blank">申请友情链接</a></small></p>
+			<div class="friends" id="friends">
+				<div class="spinner">
+					<div class="rect1"></div>
+					<div class="rect2"></div>
+					<div class="rect3"></div>
+					<div class="rect4"></div>
+					<div class="rect5"></div>
+				</div>
+			</div>
+
 			<h2 class="lists-h2">留言板</h2>
-			<small>对Gitalk的安全性存在争议。如您有顾虑，请<a href="">点击这里</a>前往GitHub评论。</small>
+			<!-- <p class="lists-p"><small>对Gitalk的安全性存在争议。如您有顾虑，请<a href="javascript:alert('这个功能被遗忘了')">点击这里</a>前往GitHub评论。</small></p> -->
 			<div id="gitalk">
 				<div class="spinner">
 					<div class="rect1"></div>
@@ -83,6 +96,9 @@
 				</div>
 			</div>
 		</div>
+		<script>
+			showad(0,"100%","150px","margin-bottom:20px;");
+		</script>
 
 		<div id="fcont"></div>
 	</body>

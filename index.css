@@ -17,12 +17,7 @@
 
 }
 
-.title{
-	
-	text-align: center;
-	margin-top: 30px;
-	
-}
+
 
 .lists{
 
@@ -36,19 +31,15 @@
 
 .lists-h2{
 	
-	margin-top: 20px;
 	display: block;
-	margin: 20px -10px 9px -10px;	
+	margin: 20px -4px 13px -4px;	
 }
 
-.flex{
+.lists-p{
 	
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	
+	display: block;
+	margin: -7px -4px 13px -4px;	
 }
-
 
 .block-button{
 	
@@ -70,42 +61,6 @@
 
 }
 
-
-.button{
-	
-	backdrop-filter: saturate(120%) blur(25px);
-	-webkit-backdrop-filter: saturate(120%) blur(25px);
-    background-color: rgba(255,255,255,0.72);
-	cursor: pointer;
-	transition: all 0.11s;
-	-moz-transition:all 0.11s;
-	-webkit-transition: all 0.11s;
-	-o-transition: all 0.11s;
-	
-	
-}
-.button:hover{
-
-	box-shadow: 0px 0px 4px black; 
-	background-color: rgba(255,255,255,0.2);
-	transform:scale(0.99);
-	-ms-transform:rotate(0.99); 	/* IE 9 */
-	-moz-transform:rotate(0.99); 	/* Firefox */
-	-webkit-transform:rotate(0.99); /* Safari 和 Chrome */
-	-o-transform:rotate(0.99); 	/* Opera */
-      
-}	
-	   
-.button:active{
-
-	transform:scale(0.97);
-	-ms-transform:rotate(0.97); 	/* IE 9 */
-	-moz-transform:rotate(0.97); 	/* Firefox */
-	-webkit-transform:rotate(0.97); /* Safari 和 Chrome */
-	-o-transform:rotate(0.97); 	/* Opera */
-  
-}	
-	
 		 
 .btitle{
 	
@@ -188,9 +143,16 @@ black:active, black:hover{
 
 	
 }
-.contactways{
+.myinfo p{
 	
-	display: inline-block;
+	margin-bottom: -3px;
+	
+}
+
+
+.mytable{
+	
+	margin-bottom: 8px;
 	
 }
 
@@ -315,6 +277,12 @@ black:active, black:hover{
 		text-align: center;
 		
 	}
+
+	.lists-p{
+		
+		text-align: center;
+		
+	}
 	.block-button{
 		
 		width: 44%;
@@ -350,11 +318,6 @@ black:active, black:hover{
 		background: url('https://p.pstatp.com/origin/fe8200025988d3728d5a') center 0 no-repeat;
 	}
 	
-	.button{
-		
-		background-color: rgba(52,50,50,0.7);
-		
-	}
 	.btitle,.bintro{
 		
 		color: white;

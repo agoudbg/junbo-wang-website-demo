@@ -316,6 +316,8 @@ black:active, black:hover{
 		
 	#bodybg{
 		background: url('https://p.pstatp.com/origin/fe8200025988d3728d5a') center 0 no-repeat;
+		background-size: cover;
+}
 	}
 	
 	.btitle,.bintro{

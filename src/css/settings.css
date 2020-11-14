@@ -36,15 +36,10 @@ body{
 	background-color: white;
 	width: calc(100% - 24px);
 	padding: 0px 12px;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	word-break: break-all;
-	font-size: 17px;
-	margin: 0px 0;
+	margin: -0.5px 0;
 	border-style: solid;
 	border-color: grey;
-	border-width: 2px 0;
+	border-width: 0.5px 0;
 
 }
 
@@ -57,7 +52,7 @@ body{
 	overflow: hidden;
 	word-break: break-all;
 	font-size: 17px;
-	margin: -5px 0;
+	margin: -2px 0;
 
 }
 

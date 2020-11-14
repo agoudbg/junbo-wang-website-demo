@@ -40,8 +40,11 @@ body{
 	text-overflow: ellipsis;
 	overflow: hidden;
 	word-break: break-all;
-	font-size: 16px;
-	margin: -10px 0;
+	font-size: 17px;
+	margin: 0px 0;
+	border-style: solid;
+	border-color: grey;
+	border-width: 2px 0;
 
 }
 

@@ -1,8 +1,21 @@
 :root{
 	
-	--back: #F0F0F0;
-	
+	--back: #F2F2F7;
+	--border: #E3E3E3;
+	--block-color: #FFFFFF;
+
 }
+
+@media (prefers-color-scheme: dark) {
+	
+	:root{
+	
+		--back: #000000;
+		--border: #1C1C1F;
+		--block-color: #232126;
+
+	} 
+
 
 body{
 	
@@ -33,12 +46,12 @@ body{
 .setting-button{
 	
 	display: inline-block;
-	background-color: white;
+	background-color: var(--block-color);
 	width: calc(100% - 24px);
 	padding: 0px 12px;
 	margin: -0.5px 0;
 	border-style: solid;
-	border-color: grey;
+	border-color: var(--border);
 	border-width: 0.5px 0;
 
 }

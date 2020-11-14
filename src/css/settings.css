@@ -59,7 +59,7 @@ body{
 
 .setting-button p{
 	
-	width: calc(100% - 50px);
+	width: calc(100% - 60px);
 	padding: 0px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
@@ -75,25 +75,10 @@ body{
 	
 	color: grey;
 	font-size: 14px;
-	margin: 20px 12px;
+	margin: 10px 12px 20px 12px;
 	line-height: 1.6;
 	
 }
-
-@media (prefers-color-scheme: dark) {
-	
-		.setting-button{
-			
-			background-color: black;
-			
-		}
-		
-		
-		
-}
-
-
-
 
 .a-switch{
 	width: 60px;
@@ -107,7 +92,7 @@ body{
 	position: relative;
 	transition:0.4s;
 	float: right;
-	margin-top: -45px;
+	margin-top: -50px;
 	
 	
 }

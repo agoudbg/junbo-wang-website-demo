@@ -37,11 +37,11 @@ body{
 	width: calc(100% - 24px);
 	padding: 0px 12px;
 	white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    word-break: break-all;
-	font-size: 18px;
-	margin-bottom: -10px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	word-break: break-all;
+	font-size: 16px;
+	margin: -10px 0;
 
 }
 

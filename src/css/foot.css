@@ -27,7 +27,8 @@
 }
 
 .footer-body{
+
 	background-color:grey;
-	margin:-8px;
-	padding:5px 15px;
+	margin:0 -8px;
+	padding:5px 15px 15px 15px;
 }

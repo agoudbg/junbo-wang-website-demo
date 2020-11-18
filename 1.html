@@ -30,34 +30,70 @@
 		<h1 class="title">欢迎来到 junbo.wang</h1>
 		
 		<div class="lists">
-			<h2 class="lists-h2">主要的网站</h2>
-			<p class="lists-p"><small>默认在新窗口打开</small></p>
+			<div class="card">
+				<h2 class="card-h2">主要的网站</h2>
+				<p class="card-p"><small>默认在新窗口打开</small></p>
 
-			<div class="flex" id="mainsites">
-				<div class="spinner">
-					<div class="rect1"></div>
-					<div class="rect2"></div>
-					<div class="rect3"></div>
-					<div class="rect4"></div>
-					<div class="rect5"></div>
+				<div class="flex" id="mainsites">
+					<div class="spinner">
+						<div class="rect1"></div>
+						<div class="rect2"></div>
+						<div class="rect3"></div>
+						<div class="rect4"></div>
+						<div class="rect5"></div>
+					</div>
+					
 				</div>
-				
 			</div>
-			<h2 class="lists-h2">关于我</h2>
-			<div>
-				
-				<table class="mytable"><tr><td valign="top">
-					<img class="button" id="myavatar" src="/src/img/nick.jpg" onclick="alert('别戳了，这儿什么都没有');">	
-				</td><td class="myinfo">
-				
-					<p>高三电脑菜鸡一枚</p>
-					<p>啥都不懂，啥都会一点</p>
-					<p>刚接触二次元<black>重度魔禁厨</black></p>
-					<p>用电脑之路起源于PowerPoint</p>
-					<p>想不出来写什么了……</p>
-					</td>
-				</tr></table>
-				<div id="contactways">
+			
+			<div class="card leftcard">
+				<h2 class="card-h2">关于我</h2>
+				<div>
+					
+					<table class="mytable"><tr><td valign="top">
+						<img class="button" id="myavatar" src="/src/img/nick.jpg" onclick="alert('别戳了，这儿什么都没有');">	
+					</td><td class="myinfo">
+					
+						<p>高三电脑菜鸡一枚</p>
+						<p>啥都不懂，啥都会一点</p>
+						<p>刚接触二次元<black>重度魔禁厨</black></p>
+						<p>用电脑之路起源于PowerPoint</p>
+						<p>想不出来写什么了……</p>
+						</td>
+					</tr></table>
+					<div id="contactways">
+						<div class="spinner">
+							<div class="rect1"></div>
+							<div class="rect2"></div>
+							<div class="rect3"></div>
+							<div class="rect4"></div>
+							<div class="rect5"></div>
+						</div>
+					</div>
+				</div>
+				<script>
+					showad(0,"100%","150px","margin-bottom:20px;");
+				</script>
+			</div>
+			
+			<div class="card leftcard">
+				<h2 class="card-h2">友情链接</h2>
+				<p class="card-p"><small><a href="https://www.wjx.top/jq/93457953.aspx" target="blank">申请友情链接</a></small></p>
+				<div class="friends" id="friends">
+					<div class="spinner">
+						<div class="rect1"></div>
+						<div class="rect2"></div>
+						<div class="rect3"></div>
+						<div class="rect4"></div>
+						<div class="rect5"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="card rightcard">
+				<h2 class="card-h2">留言板</h2>
+				<!-- <p class="card-p"><small>对Gitalk的安全性存在争议。如您有顾虑，请<a href="javascript:alert('这个功能被遗忘了')">点击这里</a>前往GitHub评论。</small></p> -->
+				<div id="gitalk">
 					<div class="spinner">
 						<div class="rect1"></div>
 						<div class="rect2"></div>
@@ -68,41 +104,12 @@
 				</div>
 			</div>
 		</div>
-		<!-- <div id="ads"></div> -->
-		<script>
-			showad(0,"100%","150px","margin-bottom:20px;");
-		</script>
-		
-		<div class="lists">
-			<h2 class="lists-h2">友情链接</h2>
-			<p class="lists-p"><small><a href="https://www.wjx.top/jq/93457953.aspx" target="blank">申请友情链接</a></small></p>
-			<div class="friends" id="friends">
-				<div class="spinner">
-					<div class="rect1"></div>
-					<div class="rect2"></div>
-					<div class="rect3"></div>
-					<div class="rect4"></div>
-					<div class="rect5"></div>
-				</div>
-			</div>
+			
+			<script>
+				showad(0,"100%","150px","margin-bottom:20px;");
+			</script>
 
-			<h2 class="lists-h2">留言板</h2>
-			<!-- <p class="lists-p"><small>对Gitalk的安全性存在争议。如您有顾虑，请<a href="javascript:alert('这个功能被遗忘了')">点击这里</a>前往GitHub评论。</small></p> -->
-			<div id="gitalk">
-				<div class="spinner">
-					<div class="rect1"></div>
-					<div class="rect2"></div>
-					<div class="rect3"></div>
-					<div class="rect4"></div>
-					<div class="rect5"></div>
-				</div>
-			</div>
-		</div>
-		<script>
-			showad(0,"100%","150px","margin-bottom:20px;");
-		</script>
-
-		<div id="fcont"></div>
+		<div id="fcont" style="float:left;width:100%"></div>
 	</body>
 		<script src="/src/js/header.js"></script>
 		<script src="/src/js/showindexmainlist.js"></script>

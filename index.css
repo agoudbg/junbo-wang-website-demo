@@ -186,6 +186,26 @@ black:active, black:hover{
 	
 }
 	
+.gt-header-controls-tip{
+	
+	display: none!important;
+	
+}
+
+.gt-meta{
+	
+	border: none!important;
+	
+}
+
+@media screen and (min-width: 468px) {
+	.gt-btn{
+		
+		margin-left: 4px!important;
+		
+	}
+}
+
 .card{
 	
 	display: inline-block;

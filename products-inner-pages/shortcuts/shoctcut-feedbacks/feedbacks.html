@@ -19,7 +19,7 @@
 		<div id="hcont"></div>
 		<!-- 下面是正文 -->
 		
-		<h1 style="text-align:center;"><span id="scname">快捷指令反馈</span></h1>
+		<h1 style="text-align:center;"><span id="scname">快捷指令</span>反馈</h1>
 		<div id="gitalk"></div>
 
 		<div id="fcont"></div>
@@ -42,9 +42,10 @@
 				return "";
 			}
 			shortcutid=Request('id');
-			scnames[2389608817]="轻点背面反馈";
+			var scnames=[0,0,0];
+			scnames[2389608817]="轻点背面";
 			
-			scname.innerHTML=scnames[shortcutid];
+			scname.innerHTML=scnames[Number(shortcutid)];
 			creategitalk('01de9bbd0e209cf8f597','3a84eeb47368b6116a6d8c118d95ac9d91dfde20','229pl','gitalk','shortcut-feedback-'+shortcutid);
 		</script> 
 		

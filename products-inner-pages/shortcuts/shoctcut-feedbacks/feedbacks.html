@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html>
+	<head>
+
+		<meta charset="utf-8" />
+		<title>反馈 - Junbo 站点导航 - junbo.wang</title>
+		<!-- 自适应 -->
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+		<meta name='apple-mobile-web-app-capable' content='yes'>
+		<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+		<meta name='format-detection' content='telephone=no'>
+		<!-- 样式 -->
+		<link rel="stylesheet" type="text/css" href="/src/css/common.css">
+		
+	</head>
+
+	<body>
+		<div id="hcont"></div>
+		<!-- 下面是正文 -->
+		
+		<h1 style="text-align:center;">快捷指令反馈</h1>
+		<div id="gitalk"></div>
+
+		<div id="fcont"></div>
+	</body>
+		<script src="/src/js/header.js"></script>
+		<script src="//cdn.junbo.wang/gitalk/create.js"></script>
+		<script src="//cdn.junbo.wang/gitalk/gitalk.min.js"></script>
+		<script>
+					
+			function Request(strName){
+				var strHref = location.href;
+				var intPos = strHref.indexOf("?");
+				var strRight = strHref.substr(intPos + 1);
+				var arrTmp = strRight.split("&");
+				for(var i = 0; i < arrTmp.length; i++) {
+					var arrTemp = arrTmp[i].split("=");
+					if(arrTemp[0].toUpperCase() == strName.toUpperCase()) 
+						return arrTemp[1];
+				}
+				return "";
+			}
+			shortcutid=Request('id');
+				
+			creategitalk('01de9bbd0e209cf8f597','3a84eeb47368b6116a6d8c118d95ac9d91dfde20','229pl','gitalk','shortcut-feedback'+shortcutid);
+		</script> 
+		
+
+		
+		
+
+</html> 

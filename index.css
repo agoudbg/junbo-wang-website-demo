@@ -1,8 +1,19 @@
 :root{
 	
 	--block-bg: #E4E4E4;
-	
+	--burl: #707070;
 }
+
+@media (prefers-color-scheme: dark) {
+
+	:root{
+	
+		--block-bg: #E4E4E4;
+		--burl: #E4E4E4;
+	}
+
+}
+
 
 #bodybg{
 	content: ' ';
@@ -85,27 +96,6 @@
 .web-icon{
 	
 	margin-bottom: -2px;
-	fill: #707070;
-	
-}
-
-.burl{
-	
-	font-size: 14px;
-	color: #707070!important;
-	white-space: nowrap;
-    /* text-overflow: ellipsis; */
-    overflow: hidden;
-    /* word-break: break-all; */
-	display: inline;
-	/* webkit-line-clamp: 1; */
-	/* line-clamp: 1; */
-	
-}
-
-.burl:hover{
-	
-	color: #707070!important;
 	
 }
 
@@ -322,25 +312,6 @@ black:active, black:hover{
 		background: url('https://p.pstatp.com/origin/fe8200025988d3728d5a') center 0 no-repeat;
 		background-size: cover;
 	}
-	
-	.btitle,.bintro{
-		
-		color: white;
-		
-	}
-	
-	.burl{
-		
-		color: #E4E4E4!important;
-		
-	}
-	
-	.web-icon{
-		
-		fill: #E4E4E4;
-		
-	}
-	
 	
 	.contact-button{
 		

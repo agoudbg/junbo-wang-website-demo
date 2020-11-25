@@ -103,7 +103,7 @@
 .burl{		
 
  	font-size: 14px;		
- 	color: #707070!important;		
+ 	color: var(--burl);		
  	white-space: nowrap;		
      	/* text-overflow: ellipsis; */		
     	overflow: hidden;		
@@ -114,11 +114,6 @@
 
 }		
 
-.burl:hover{		
-
-  	color: #707070!important;		
-
-}
 
 .bintro{
 	

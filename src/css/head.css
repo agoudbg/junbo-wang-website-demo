@@ -1,5 +1,6 @@
 
-#header-main {
+#header-main{
+	
 	position:fixed;
 	z-index:999;
 	width:100%;
@@ -10,12 +11,15 @@
 	-webkit-backdrop-filter: saturate(180%) blur(20px);
 	backdrop-filter: saturate(180%) blur(20px);
 	background-color: rgba(255,255,255,0.72);
+	overflow: hidden;
+	text-overflow: ellipsis;
+
 
 }
 
-#header-title {
-	font-family:PingFangSC-Regular, Microsoft YaHei UI Bold, sans-serif;
+#header-title{
 	margin-top: 18px;
+	
 }
 .header-link:link{
 	text-decoration:none;

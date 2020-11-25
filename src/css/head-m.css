@@ -1,65 +1,67 @@
 
-		.height {
-			height:58px;
-		}
+.height {          
 
-		#header-main p,#header-main h1 {
-			
-		}
-		#header-title{
-			text-align:center;
-			font-size:24px;
-			margin-top:10px;
-		}
-		#mobile-menu {
-			position:fixed;
-			z-index:999;
-			left:0px;
-			top:-3px;
-			padding:15px 47px 0px 10px;
-			
-		}
-		.header-map{
-			float:none;
-			font-size:20px;
-			margin:0px -12px;
-			width:100%;
-			padding:15px 20px 16px 60px;
-			background-color:none;
-			
-		}
-		#cover{
-			width:200%;
-			height:200%;
-			margin:-60px;
-			position:fixed;
-			z-index:50;
-			background-color:grey;	
-			opacity:0.5;
-			visibility:hidden;
-		}
+	height:58px;
+	
+}
+
+
+#header-title{
+	
+	text-align:center;
+	font-size:24px;
+	margin:10px 30px;
+	
+}
+#mobile-menu {
+	position:fixed;
+	z-index:999;
+	left:0px;
+	top:-3px;
+	padding:15px 47px 0px 10px;
+	
+}
+.header-map{
+	float:none;
+	font-size:20px;
+	margin:0px -12px;
+	width:100%;
+	padding:15px 20px 16px 60px;
+	background-color:none;
+	
+}
+#cover{
+	width:200%;
+	height:200%;
+	margin:-60px;
+	position:fixed;
+	z-index:50;
+	background-color:grey;	
+	opacity:0.5;
+	visibility:hidden;
+}
+
+
+#map-box {
+	background-color:#F7F7F7;
+	margin-top: -5px;
+	visibility:hidden;
+}
+
+.map-link:hover, .map-link:active{
+
+	text-decoration: none!important;
+}
+
+@media (prefers-color-scheme: dark) {
+	#map-box {
+		background-color:#3B3B3B;
+	}
+	
+	#mobile-menu{
 		
-
-		#map-box {
-			background-color:#F7F7F7;
-			margin-top: -5px;
-			visibility:hidden;
-		}
-
-		.map-link:hover, .map-link:active{
+		fill: white;
 		
-			text-decoration: none!important;
-		}
+	}
+}
 
-		@media (prefers-color-scheme: dark) {
-			#map-box {
-				background-color:#3B3B3B;
-			}
-			
-			#mobile-menu{
-				
-				fill: white;
-				
-			}
-		}
-		

@@ -36,10 +36,10 @@
 	
 	float:none;
 	font-size:20px;
-	margin:0px -12px;
+	margin:0px -8px;
 	width:100%;
-	padding:15px 20px 16px 60px;
-	background-color:none;
+	padding:15px 0px 16px 80px;
+	
 	
 }
 
@@ -59,9 +59,11 @@
 #map-box {
 	
 	position: fixed;
-	top: 54px;
+	top: 55px;
 	left:0px;
 	width: calc(100% + 16px);
+	max-height: calc(100% - 55px);
+	overflow-y: auto;
 	height: auto;
 	margin: 0 -8px;
 	z-index: 60;

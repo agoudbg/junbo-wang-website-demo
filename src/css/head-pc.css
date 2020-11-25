@@ -1,37 +1,45 @@
 .height {
 	
-	height:70px;
+	height: 70px;
 	
 }
 
 #header-main p,#header-main h1 {
 
 	display: inline-block;
-	margin-top:10px;
+	margin-top: 10px;
 
 }
 
 #header-title{
 
-	margin-left:25px;
+	margin-left: 25px;
 
+}
+
+#logo{
+	
+	height:40px;
+	
 }
 
 .header-map{
 
-	float:left;
-	font-size:20px;
-	margin:5px;
-	padding:15px 20px 16px 20px;
-	background-color:none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 0px 0px 0px 6px;
+	height: 70px;
+	padding: 26px 20px;
 
 }
 
 #map-box{
+	
 	position: fixed;
 	right: 10px;
-	display:inline-table;
-	
+	top: 0px;
+	max-width: calc(100% - 360px);
+	text-align: right;
 }
 
 #mobile-menu {

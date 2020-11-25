@@ -13,7 +13,17 @@
 	margin:10px 30px;
 	
 }
+
+#logo{
+	
+	height:50px;
+	margin-bottom:-10px;
+	margin-right:5px;
+	
+}
+
 #mobile-menu {
+	
 	position:fixed;
 	z-index:999;
 	left:0px;
@@ -21,7 +31,9 @@
 	padding:15px 47px 0px 10px;
 	
 }
+
 .header-map{
+	
 	float:none;
 	font-size:20px;
 	margin:0px -12px;
@@ -30,22 +42,31 @@
 	background-color:none;
 	
 }
+
 #cover{
+	
 	width:200%;
 	height:200%;
 	margin:-60px;
 	position:fixed;
 	z-index:50;
-	background-color:grey;	
-	opacity:0.5;
+	background-color:black;	
+	opacity:0.67;
 	visibility:hidden;
 }
 
 
 #map-box {
-	background-color:#F7F7F7;
-	margin-top: -5px;
+	
+	position: fixed;
+	top: 54px;
+	left:0px;
+	width: calc(100% + 16px);
+	height: auto;
+	margin: 0 -8px;
+	z-index: 60;
 	visibility:hidden;
+	
 }
 
 .map-link:hover, .map-link:active{

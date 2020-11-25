@@ -1,3 +1,30 @@
+:root{
+	
+	--jianbian: saturate(120%) blur(25px);
+	--jianbian-color: rgba(255,255,255,0.72);
+	--a-color: #007BFE;
+	
+}
+
+@media (prefers-color-scheme: dark){
+
+	:root{
+		
+		--jianbian-color: rgba(52,50,50,0.7);
+		
+	}
+
+
+	body{
+
+		color: white;
+		background: #262626;
+	
+	}
+
+}
+
+
 body{
 
 	line-height: normal;
@@ -20,47 +47,31 @@ body{
 a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):not(.card-seemore):link{
 
 	text-decoration: none;
-	color: blue;
+	color: var(--a-color);
 
 }
 
 a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):not(.card-seemore):hover{
 
 	text-decoration: underline;
-	color: blue;
+	color: var(--a-color);
 
 }
 
 a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):not(.card-seemore):visited{
 
-	color: blue;
+	color: var(--a-color);
 	text-decoration: none;
-
-}
-
-.dark-tip{
-
-	display: none;
-
-}
-
-.light-tip{
-
-	display: block;
-	background-color: #BFBFBF;
-	padding: 6px 20%;
-	margin-left: -8px;
-	margin-right: -8px;
-	color: black;
 
 }
 
 .common-tip{
 
 	display: block;
-	background-color: #595959;
-	padding: 6px 20%;
-	color: white;
+	backdrop-filter: var(--jianbian);
+	-webkit-backdrop-filter: var(--jianbian);
+	background-color: var(--jianbian-color);
+	padding: 2px 13%;
 	margin-left: -8px;
 	margin-right: -8px;
 
@@ -68,9 +79,9 @@ a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):not(.card-seemore):vis
 
 .button{
 
-	backdrop-filter: saturate(120%) blur(25px);
-	-webkit-backdrop-filter: saturate(120%) blur(25px);
-	background-color: rgba(255,255,255,0.72);
+	backdrop-filter: var(--jianbian);
+	-webkit-backdrop-filter: var(--jianbian);
+	background-color: var(--jianbian-color);
 	cursor: pointer;
 	transition: all 0.11s;
 	-moz-transition: all 0.11s;
@@ -216,78 +227,3 @@ a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):not(.card-seemore):vis
 
 }
 
-@media (prefers-color-scheme: dark){
-
-	body
-	{
-
-		color: white;
-		background: #262626;
-	
-}
-
-	a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):link
-	{
-
-		text-decoration: none;
-		color: #00B0F0!important;
-	
-}
-
-	a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):hover
-	{
-
-		text-decoration: underline;
-		color: #00B0F0!important;
-	
-}
-
-	a:not(.weui-dialog__btn):not(.header-link):not(.footer-a):visited
-	{
-
-		color: #00B0F0!important;
-		text-decoration: none;
-	
-}
-
-	.force
-	{
-
-		filter: Invert (enabled=bEnabled)
-	
-}
-
-	.dark-tip
-	{
-
-		display: block;
-		background-color: #595959;
-		padding: 6px 20%;
-		color: white;
-		margin-left: -8px;
-		margin-right: -8px;
-	
-}
-
-	.light-tip
-	{
-
-		display: none;
-	
-}
-
-	.common-tip
-	{
-
-		background-color: #595959;
-	
-}
-
-	.button
-	{
-
-		background-color: rgba(52,50,50,0.7);
-	
-}
-
-}

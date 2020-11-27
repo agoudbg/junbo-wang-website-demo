@@ -186,12 +186,13 @@
 
 	#map-box {
 		
-		position: fixed;
-		top: 55px;
+		position: absolute;
+		top: 60px;
+		/* bottom: calc(100% - 55px); */
 		left:0px;
-		padding: 10px 0 0 0;
+		padding: 10px 0 20px 0;
 		width: calc(100% + 16px);
-		max-height: calc(100% - 55px);
+		max-height: calc(100% - 75px);
 		overflow-y: auto;
 		/* height: 0; */
 		margin: 0 -8px;
@@ -209,7 +210,8 @@
 		
 		visibility: visible!important;
 		height: auto!important;
-
+		/* top: 55px!important; */
+		/* bottom: 0!important; */
 	}
 
 	.map-box-opened .header-map{

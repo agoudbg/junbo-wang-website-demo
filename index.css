@@ -139,13 +139,13 @@
 
 black{
 	
-	color: black;
+	color: black!important;
 	background-color: black;
 	
 }
-black:active, black:hover{
+black:active, black:focus, black:hover{
 	
-	color: white;
+	color: white!important
 
 	
 }

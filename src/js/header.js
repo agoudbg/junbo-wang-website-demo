@@ -14,19 +14,25 @@ var sit=0;
 function go() {
 	if(sit==0){
 		document.getElementById("map-box").className = "map-box-opened";
+		document.getElementById("header-main").className = "header-main-opened";
+		// document.getElementById("header-box").className = "map-box-opened";
 		cover.className = "cover-opened";
 		sit=1;
 	}
 	else{
 		document.getElementById("map-box").className = "";
+		document.getElementById("header-main").className = "";
+		// document.getElementById("header-box").className = "";
 		cover.className = "";
 		sit=0;
 	}
 }
 function stop(){
-	document.getElementById("map-box").className = "";
-	cover.className = "";
-	sit=0;
+		document.getElementById("map-box").className = "";
+		document.getElementById("header-main").className = "";
+		// document.getElementById("header-box").className = "";
+		cover.className = "";
+		sit=0;
 }
 // window.onresize=function() {
 	// if (document.body.clientWidth > 700)

@@ -18,6 +18,7 @@
 
 #header-title{
 	margin-top: 18px;
+	z-index: 1000;
 	
 }
 .header-link:link{
@@ -36,7 +37,6 @@
 @media (prefers-color-scheme: dark) {
 	
 	#header-main{
-		background-color:#3B3B3B;
 		color:white;
 		-webkit-backdrop-filter: blur(20px);
 		backdrop-filter: blur(20px);
@@ -55,9 +55,315 @@
 	}
 	.icon {
 		
-		fill: #ffffff;　
-		
+		fill: #ffffff;
 		
 	}
 
 }
+
+@media(max-width:700px){
+
+
+	.height {          
+
+		height:58px;
+		
+	}
+
+	#header-main{
+		
+		transition: all 0.25s;
+		-moz-transition: all 0.25s; /* Firefox 4 */
+		-webkit-transition: all 0.25s; /* Safari 和 Chrome */
+		-o-transition: all 0.25s; /* Opera */
+			
+	}
+
+	.header-main-opened{
+		
+		backdrop-filter: none!important;
+		webkit-backdrop-filter: none!important;
+		background: none!important;
+		
+	}
+
+	#logo{
+		
+		height:40px;
+		margin-bottom:-10px;
+		margin-right:5px;
+	}
+		
+
+	.header-main-opened #header-title{
+
+		color: white!important;
+
+	}
+
+	#header-title{
+
+		transition: all 0.25s;
+		-moz-transition: all 0.25s; /* Firefox 4 */
+		-webkit-transition: all 0.25s; /* Safari 和 Chrome */
+		-o-transition: all 0.25s; /* Opera */
+		
+	}
+
+	.header-main-opened svg{
+		
+		fill: white!important;
+			
+	}
+
+	#header-main svg{
+		
+		transition: all 0.25s;
+		-moz-transition: all 0.25s; /* Firefox 4 */
+		-webkit-transition: all 0.25s; /* Safari 和 Chrome */
+		-o-transition: all 0.25s; /* Opera */
+
+	}
+
+	#header-title{
+		
+		text-align:center;
+		font-size:24px;
+		margin:10px 30px;
+		
+	}
+
+	#logo{
+		
+		height:40px;
+		
+	}
+
+	#mobile-menu {
+		
+		position:fixed;
+		z-index:999;
+		left:0px;
+		top:-3px;
+		padding:15px 47px 0px 10px;
+		
+	}
+
+	.header-map{
+		
+		width: calc(100% - 70px);	
+		font-size: 18px;
+		margin:0px -8px;
+		padding:10px 0px 10px 70px;
+		color: white!important;
+		transition: all 0.75s;
+		-moz-transition: all 0.75s; /* Firefox 4 */
+		-webkit-transition: all 0.75s; /* Safari 和 Chrome */
+		-o-transition: all 0.75s; /* Opera */
+		transform: scale(0);
+		/* height: 0; */
+	}
+
+	#cover{
+		
+		width: 100%;
+		height: 0;
+		margin: -80px -8px -8px -8px;
+		position:fixed;
+		z-index:50;
+		background-color: black;	
+		opacity:0.2;
+		visibility: hidden;
+		backdrop-filter: ;
+		-webkit-backdrop-filter: ;
+		transition: all 0.75s;
+		-moz-transition: all 0.75s; /* Firefox 4 */
+		-webkit-transition: all 0.75s; /* Safari 和 Chrome */
+		-o-transition: all 0.75s; /* Opera */
+			
+	}
+
+
+	#map-box {
+		
+		position: fixed;
+		top: 55px;
+		left:0px;
+		padding: 10px 0 0 0;
+		width: calc(100% + 16px);
+		max-height: calc(100% - 55px);
+		overflow-y: auto;
+		/* height: 0; */
+		margin: 0 -8px;
+		z-index: 60;
+		visibility: hidden;
+		background-color: none!important;
+		transition: all 0.75s;
+		-moz-transition: all 0.75s; /* Firefox 4 */
+		-webkit-transition: all 0.75s; /* Safari 和 Chrome */
+		-o-transition: all 0.75s; /* Opera */
+			
+	}
+
+	.map-box-opened{
+		
+		visibility: visible!important;
+		height: auto!important;
+
+	}
+
+	.map-box-opened .header-map{
+		
+		transform: scale(1)!important;
+		height: auto!important;
+		
+	}
+
+	.cover-opened{
+		
+		opacity:0.9!important;
+		visibility: visible!important;
+		height: calc(100% + 16px)!important;
+		backdrop-filter: var(--jianbian)!important;
+		-webkit-backdrop-filter: var(--jianbian)!important;	
+		
+
+		
+	}
+
+	.map-link:hover, .map-link:hover div, .map-link:active, .map-link:active div{
+
+		text-decoration: none!important;
+		color: #BDBDBD!important;
+		
+	}
+
+	@media (prefers-color-scheme: dark) {
+
+		#mobile-menu{
+			
+			fill: white;
+			
+		}
+	}
+
+}
+
+
+
+@media(min-width:700px){
+
+	.height {
+		
+		height: 70px;
+		
+	}
+
+	#header-main p,#header-main h1 {
+
+		display: inline-block;
+		margin-top: 10px;
+
+	}
+
+	#header-title{
+
+		margin-left: 25px;
+
+	}
+
+	#logo{
+		
+		height:50px;
+		margin-bottom:-10px;
+		margin-right:5px;
+		
+	}
+
+	.header-map{
+
+		display: inline-block;
+		font-size: 20px;
+		margin: 0px 0px 0px 6px;
+		height: 70px;
+		padding: 26px 20px;
+
+	}
+
+	#map-box{
+		
+		position: fixed;
+		right: 10px;
+		top: 0px;
+		max-width: calc(100% - 360px);
+		text-align: right;
+		z-index: 1000;
+		height: 70px;
+		overflow: hidden;
+	}
+
+	#mobile-menu {
+
+		display:none;
+
+	}
+
+	#clicker {
+
+		position:fixed;
+
+	}
+
+
+	.map-link div:link{
+		text-decoration:none;
+		background-color:grey;
+		color:white;
+	}
+	.map-link div:hover{
+		text-decoration:none;
+		background-color:grey;
+		color:white;
+	}
+	.map-link div:visited{
+		background-color:grey;
+		text-decoration:none;
+		color:black;
+	}
+	.map-link div{
+		background-color:none!important;
+		text-decoration:none;
+		color:black;
+		backdrop-filter: none!important;
+		
+	}
+
+	@media (prefers-color-scheme: dark) {
+		
+			.map-link div:link{
+			text-decoration:none;
+			background-color:white;
+			color:black;
+		}
+		.map-link div:hover{
+			text-decoration:none;
+			background-color:white;
+			color:black;
+		}
+		.map-link div:visited{
+			background-color:black;
+			text-decoration:none;
+			color:white;
+		}
+		.map-link div{
+			background-color:none!important;
+			text-decoration:none;
+			color:white;
+			backdrop-filter: none!important;
+		}
+		
+	}
+
+}
+
+

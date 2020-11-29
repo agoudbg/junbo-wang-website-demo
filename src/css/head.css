@@ -164,6 +164,34 @@
 		/* height: 0; */
 	}
 
+	#header-account{
+	
+		color: white;
+		/* position: absolute; */
+		/* bottom: -100000000000%; */
+		left: 54px;
+		right: 54px;
+		opacity: 0;
+		transition: bottom opacity 0.5s;
+		-moz-transition: bottom opacity 0.5s; /* Firefox 4 */
+		-webkit-transition: bottom opacity 0.5s; /* Safari 和 Chrome */
+		-o-transition: bottom opacity 0.5s; /* Opera */
+		
+	}
+	
+	.cover-opened #header-account{
+	
+		color: white;
+		position: absolute;
+		bottom: 20px;
+		opacity: 1;
+		transition-delay: 0.5s;
+		-moz-transition-delay: 0.5s; /* Firefox 4 */
+		-webkit-transition-delay: 0.5s; /* Safari 和 Chrome */
+		-o-transition-delay: 0.5s; /* Opera */
+			
+	}
+	
 	#cover{
 		
 		width: 100%;
@@ -184,7 +212,7 @@
 	}
 
 
-	#map-box {
+	#map-box-main {
 		
 		position: absolute;
 		top: 60px;
@@ -192,9 +220,8 @@
 		left:0px;
 		padding: 10px 0 20px 0;
 		width: calc(100% + 16px);
-		max-height: calc(100% - 75px);
 		overflow-y: auto;
-		/* height: 0; */
+		max-height: calc(100% - 155px);
 		margin: 0 -8px;
 		z-index: 60;
 		visibility: hidden;
@@ -253,7 +280,7 @@
 
 
 
-@media(min-width:700px){
+@media(min-width:701px){
 
 	.height {
 		
@@ -286,24 +313,54 @@
 
 		display: inline-block;
 		font-size: 20px;
-		margin: 0px 0px 0px 6px;
-		height: 70px;
-		padding: 26px 20px;
+		margin: 10px 0px 0px 3px;
+		height: 30px;
+		padding: 15px 12px 8px 12px;
 
 	}
 
 	#map-box{
 		
 		position: fixed;
-		right: 10px;
+		right: 15px;
 		top: 0px;
-		max-width: calc(100% - 360px);
+		max-width: calc(100% - 380px);
 		text-align: right;
 		z-index: 1000;
-		height: 70px;
+		height: 68px;
+		text-overflow: hidden;
 		overflow: hidden;
+
 	}
 
+	#map-box-main{
+	
+		/* white-space: nowrap; */
+		/* overflow-x: scroll; */
+		/* scrollbar-width: 2px; /* Firefox */ 
+		/* text-overflow: hidden; */
+		/* width: calc(100% + 200px); */
+		/* float: right; */
+	}
+
+	#header-account{
+		
+		float: right;
+		position: relative;
+		right: 0px;
+		top: 16px;
+		margin-left: 8px;
+		max-width: 190px;
+		/* margin-bottom:-60px; */
+		
+	}
+	
+	#header-account:hover{
+		
+
+		
+	}
+	
 	#mobile-menu {
 
 		display:none;

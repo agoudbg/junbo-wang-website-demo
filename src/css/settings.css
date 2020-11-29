@@ -23,21 +23,23 @@ body{
 	background-color: var(--back)!important;
 	
 }
+
 #settings-container{
 	
 	width: auto;
 	margin: -8px;
-	
 	display: flex;
 	justify-content: center;
 	
 }
+
 #settings{
 	
 	width:100%;
 	max-width:600px;
 	
 }
+
 .setting-h2{
 	
 	margin: 30px 14px 12px 14px;
@@ -115,4 +117,18 @@ body{
 }
 .a-switch:checked:before{
 	left:32px;
+}
+
+#settings-account{
+	
+	height: 50px;
+	font-size: 21px;
+	font-weight: bold;
+	margin: 10px 7px;
+	
+}
+#settings-account img{
+
+	margin-right: 12px;
+	margin-bottom: -15px;
 }

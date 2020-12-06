@@ -71,7 +71,17 @@
 
 }
 
-		 
+.blog-button{
+	
+	height: 280px;
+	
+}.blog-button-main{
+	
+	height: 247px;
+	overflow: hidden;
+	
+}
+
 .btitle{
 	
 	font-size: 24px;
@@ -81,6 +91,18 @@
     overflow: hidden;
     word-break: break-all;
 	margin-bottom: 2px;
+	
+}
+
+.blogtitle{
+	
+	font-size: 24px;
+	font-weight: bold;
+	text-overflow: initial;
+	overflow: initial;
+	margin-bottom: 4px;
+
+	
 }
 
 .bimg{
@@ -89,6 +111,15 @@
 	height: 60px;
 	margin: 22px 5px -4px 0;
 	border-radius: 10px;
+	
+}
+
+.blogimg{
+	
+	float: right;
+	height: 60px;
+	margin: 27px 5px -4px 0;
+	border-radius: 2px;
 	
 }
 
@@ -129,6 +160,20 @@
 	
 }
 
+.blogintro{
+	
+	margin-top: -10px;
+	text-overflow: initial;
+	overflow: initial;
+	
+}
+
+.link-more{
+	
+	margin-top: 5px;
+	
+}
+
 #myavatar{
 	
 	width: 100px;
@@ -143,18 +188,18 @@ black{
 	background-color: black;
 	
 }
+
 black:active, black:focus, black:hover{
 	
 	color: white!important
 
-	
 }
+
 .myinfo p{
 	
 	margin-bottom: -5px;
 	
 }
-
 
 .mytable{
 	

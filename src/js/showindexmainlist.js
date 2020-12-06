@@ -3,7 +3,49 @@ mainlist=loadc("/src/lists/indexmain.html");
 putblock("main", "mainsites");
 putblock("contact", "contactways");
 putblock("friends", "friends");
+window.onload=function(){
 
+	blog=loadc("https://blog.junbo.wang/wp-json/wp/v2/posts?per_page=3&page=1");
+	getblogart();
+		
+}
+function getblogart(){
+	
+	latestblogs.innerHTML="<center>看到此文字意味着似乎出现了一些问题。您可以尝试重新加载页面。</center>";
+	result = JSON.parse(blog);
+	latestblogs.innerHTML="";
+	for (i=0; i<result.length; i++){
+		
+		nowonart=result[i];
+		posttitle=nowonart.title.rendered;
+		posttime=nowonart.modified.substring(0,10);
+		postlink=nowonart.link.replace("http://junbosblog.ahy1.top/", "https://blog.junbo.wang/");
+		postinner=nowonart.excerpt.rendered.toString().replace(/<p class="link-more"(.*)p>/, "");
+		postfeaturedmediaid=nowonart.featured_media;
+		
+		
+		if (postfeaturedmediaid != 0){
+			
+			postfeaturedmediajson=loadc("https://blog.junbo.wang/wp-json/wp/v2/media/"+postfeaturedmediaid);
+			postfeaturedmediaresult = JSON.parse(postfeaturedmediajson);
+			postfeaturedmedia=postfeaturedmediaresult.guid.rendered.replace("http://junbosblog.ahy1.top/", "https://blog.junbo.wang/");
+			postfeaturedmediatag='<img class="blogimg" src="'+postfeaturedmedia+'">';
+			
+		}
+		else postfeaturedmediatag="";
+		posttitletag="<p class='blogtitle'>"+posttitle+"</p>";
+		posttimetag='<svg t="1607239010531" class="web-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="3477" width="16" height="16"><path d="M512 1024C229.229714 1024 0 794.770286 0 512S229.229714 0 512 0s512 229.229714 512 512-229.229714 512-512 512z m0-73.142857c242.358857 0 438.857143-196.498286 438.857143-438.857143S754.358857 73.142857 512 73.142857 73.142857 269.641143 73.142857 512s196.498286 438.857143 438.857143 438.857143z m36.571429-694.857143v256.365714l255.963428-0.365714 0.073143 73.142857-329.179429 0.475429V256h73.142858z" p-id="3478"></path></svg><p class="burl">'+posttime+'</p>';
+		postinnertag='<div class="bintro blogintro">'+postinner+'</div>';
+		
+		latestblogs.innerHTML+='<div class="block-button button blog-button" onclick="window.open(\''+postlink+'\';"><div class="blog-button-main">'+posttitletag+posttimetag+postfeaturedmediatag+postinnertag+'</div><a class="link-more" href="'+postlink+'" target="blank">在 Junbo\'s Blog 继续阅读</a></div>';
+	
+		
+		
+	}
+	
+	
+	
+}
 function putblock(type, output){
 	
 	var a=new RegExp("{"+type+":(\\S*)}","");

@@ -73,11 +73,14 @@
 
 .blog-button{
 	
-	height: 280px;
+	height: 260px;
+	width: calc(100% - 30px)!important;
 	
-}.blog-button-main{
+}
+
+.blog-button-main{
 	
-	height: 247px;
+	height: 227px;
 	overflow: hidden;
 	
 }

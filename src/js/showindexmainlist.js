@@ -14,7 +14,7 @@ window.onload=function(){
 function getblogart(){
 	// latestblogs.innerHTML='<div class="spinner"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div><div style="width: 100%;"><center>加载此区块可能需要一些时间。</center></div>';
 	blog=loadc("https://blog.junbo.wang/wp-json/wp/v2/posts?per_page=3&page=1");
-	latestblogs.innerHTML='<div style="width: 100%;"><center><small>看到此文字意味着似乎出现了一些问题。您可以尝试重新加载。</small><br /><div class="button contact-button" title="" onclick="getblogart();"><img style="width:0px;height:21px;;margin-left:0;margin-right:0;padding-left:0;padding-right:0" class="contact-img" src="/src/img/contact-icons/favicon.PNG">重新加载</div></center></div>'；
+	latestblogs.innerHTML='<div style="width: 100%;"><center><small>看到此文字意味着似乎出现了一些问题。您可以尝试重新加载。</small><br /><div class="button contact-button" title="" onclick="getblogart();"><img style="width:0px;height:21px;;margin-left:0;margin-right:0;padding-left:0;padding-right:0" class="contact-img" src="/src/img/contact-icons/favicon.PNG">重新加载</div></center></div>';
 	result = JSON.parse(blog);
 	latestblogs.innerHTML="";
 	for (i=0; i<result.length; i++){

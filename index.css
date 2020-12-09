@@ -44,12 +44,14 @@
 	
 	display: block;
 	margin: 20px -4px 13px -4px;	
+	
 }
 
 .card-p{
 	
 	display: block;
 	margin: -8px -3px 13px -3px;	
+	
 }
 
 .block-button{
@@ -74,7 +76,7 @@
 .blog-button{
 	
 	height: 260px;
-	width: calc(100% - 15px)!important;
+	width: calc(100% - 12px)!important;
 	
 }
 

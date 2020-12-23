@@ -22,16 +22,16 @@
 	
 }
 .header-link:link{
-	text-decoration:none;
-	color:black;
+	text-decoration:none!important;
+	color:black!important;
 }
 .header-link:hover{
-	text-decoration:underline;
-	color:black;
+	text-decoration:underline!important;
+	color:black!important;
 }
 .header-link:visited{
-	color:black;
-	text-decoration:none;
+	color:black!important;
+	text-decoration:none!important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,16 +42,16 @@
 		backdrop-filter: blur(20px);
 	}
 	.header-link:link{
-		text-decoration:none;
-		color:white;
+		text-decoration:none!important;
+		color:white!important;
 	}
 	.header-link:hover{
-		text-decoration:underline;
-		color:white;
+		text-decoration:underline!important;
+		color:white!important;
 	}
 	.header-link:visited{
-		color:white;
-		text-decoration:none;
+		color:white!important;
+		text-decoration:none!important;
 	}
 	.icon {
 		
@@ -59,6 +59,11 @@
 		
 	}
 
+	.changecolor{
+		
+		filter: invert(100%);
+		
+	}
 }
 
 @media(max-width:700px){

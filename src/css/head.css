@@ -20,6 +20,7 @@
 	margin-top: 18px;
 	z-index: 1000;
 	
+	
 }
 .header-link:link{
 	text-decoration:none!important;
@@ -92,7 +93,7 @@
 		
 	}
 
-	#logo{
+	#header-title img{
 		
 		height: 40px;
 		margin-bottom: -10px;
@@ -120,6 +121,11 @@
 		fill: white!important;
 			
 	}
+.header-main-opened .changecolor{
+		
+		filter: invert(100%)!important;
+			
+	}
 
 	#header-main svg{
 		
@@ -138,7 +144,7 @@
 		
 	}
 
-	#logo{
+	#header-title img{
 		
 		height: 40px;
 		
@@ -306,7 +312,7 @@
 
 	}
 
-	#logo{
+	#header-title img{
 		
 		height:50px;
 		margin-bottom:-10px;

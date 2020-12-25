@@ -28,7 +28,8 @@
 
 		<div id="hcont"></div>
 		<div id="bodybg"></div>
-		<h1 class="title">欢迎来到 junbo.wang <beta-tag>Beta</beta-tag></h1>
+		<div class="title"><p id="hitokoto_text" style="margin-bottom: -10px;font-size: 15px;"></p><h1>欢迎来到 junbo.wang <beta-tag>Beta</beta-tag></h1></div>
+
 		<div class="lists">
 			<div class="card">
 				<h2 class="card-h2">主要的网站</h2>
@@ -128,7 +129,15 @@
 		<script>
 			creategitalk('01de9bbd0e209cf8f597','3a84eeb47368b6116a6d8c118d95ac9d91dfde20','229pl','gitalk');
 		</script> 
-		
+		<script>
+			fetch('https://v1.hitokoto.cn?c=i')
+			  .then(response => response.json())
+			  .then(data => {
+				const hitokoto = document.getElementById('hitokoto_text')
+				hitokoto.innerText = data.hitokoto
+			  })
+			  .catch(console.error)
+		</script>		  
 		
 
 </html> 

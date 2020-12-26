@@ -2,24 +2,27 @@
 	
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-between;
+	margin-left: -10px;
+	margin-right: -10px;
 
 }
+
 .friends:after{
 	
 	content: ""; 
-	width: 180px;
-	margin: 12px;
-	
+	width: calc(50% - 14px);
+	margin: 7px;
 
 }
 
 .friend-button{
+
 	
-	width: 180px;
-	height: 50px;
-	margin: 6px 6px;
-	padding: 0px 5px;
+	width: calc(50% - 14px);
+	height: 70px;
+	margin: 4px 3px;
+	padding: 2px 3px;
 	/* color: black; */
 	background-size:cover;
 	-webkit-background-size:cover;
@@ -28,18 +31,49 @@
 	box-shadow: 0px 0px 1px black;
 
 	
-	
 }
-		 
+	
+@media(min-width: 1300px){
+
+	.friend-button{
+
+		width: calc(33% - 14px);
+
+	}
+
+		
+	.friends:after{
+		
+		content: ""; 
+		width: calc(33% - 14px);
+		margin: 7px;
+
+	}
+
+}
 .ftitle{
 	
-	font-size: 21px;
+	font-size: 16px;
 	font-weight: bold;
 	white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
     word-break: break-all;
-	margin-top: 10px;
+	margin-top: 6px;
+	margin-bottom: -2px;
+
+}
+
+.furl {
+
+    font-size: 10px;
+    color: var(--burl);
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+    overflow: hidden;
+    /* word-break: break-all; */
+	display: inline;
+	
 }
 
 .fimg{
@@ -53,8 +87,8 @@
 
 .fintro{
 	
-	margin-top: -15px;
-	font-size: 14px;
+	margin: 0px 6px;
+	font-size: 11px;
 	text-overflow: -o-ellipsis-lastline;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -62,7 +96,7 @@
 	-webkit-line-clamp: 1;
 	line-clamp: 1;
 	-webkit-box-orient: vertical;
-	display: none;
+
 }
 
 

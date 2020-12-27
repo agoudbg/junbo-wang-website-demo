@@ -1,15 +1,5 @@
 mainlist=loadc("/src/lists/indexmain.html");
 
-putblock("main", "mainsites");
-putblock("contact", "contactways");
-putblock("friends", "friends");
-
-window.onload=function(){
-	
-	
-	
-	
-}
 
 function getblogart(){
 	// latestblogs.innerHTML='<div class="spinner"><div class="rect1"></div><div class="rect2"></div><div class="rect3"></div><div class="rect4"></div><div class="rect5"></div></div><div style="width: 100%;"><center>加载此区块可能需要一些时间。</center></div>';

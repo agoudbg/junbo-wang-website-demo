@@ -13,7 +13,8 @@
 		<!-- 样式 -->
 		<link rel="stylesheet" type="text/css" href="/src/css/common.css">
 		<link rel="stylesheet" type="text/css" href="/src/css/head.css">
-		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" type="text/css" href="/src/css/friend.css"> 
+		<link rel="stylesheet" type="text/css" href="/src/css/plus.css">
 		<script src="//cdn.junbo.wang/ads.js"></script>
 
 	
@@ -25,18 +26,123 @@
 		<!-- 下面是正文 -->
 				
 
-			<img src="/src/img/getting-things-ready.png" style="width:300px;position:absolute;left:calc(50% - 150px);top:calc(50% - 150px);" onclick="window.open('https://mp.weixin.qq.com/s?__biz=MzA4ODM3NzA1MQ==&mid=2655763635&idx=1&sn=4c44701ea2f686794b6604355610f65b&chksm=8b940f07bce38611a0a1c1d970dd86373e9b7e137c1147f24672406ae468a70cd4bdb5fd2edd&token=5939478&lang=zh_CN#rd');">
-			<a style="text-align:center;width:300px;position:absolute;left:calc(50% - 150px);top:calc(50% + 170px);" href="/1.html" target="blank">进入 Beta 版页面 &gt;</a> </img>
+		<div id="hcont"></div>
+		<div id="bodybg"></div>
+		<div class="title"><p id="hitokoto_text" style="margin-bottom: -10px;font-size: 15px;"></p><h1>欢迎来到 junbo.wang <beta-tag>Beta</beta-tag></h1></div>
 
+		<div class="lists">
+			<div class="card">
+				<h2 class="card-h2">主要的网站</h2>
+				<p class="card-p"><small>默认在新窗口打开</small></p>
+
+				<div class="flex" id="mainsites">
+					<div class="spinner">
+						<div class="rect1"></div>
+						<div class="rect2"></div>
+						<div class="rect3"></div>
+						<div class="rect4"></div>
+						<div class="rect5"></div>
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="card leftcard">
+				<h2 class="card-h2">最新 Blog 文章 <beta-tag>Beta</beta-tag></h2>
+				<p class="card-p"><small><a href="https://blog.junbo.wang/?from=junbo_wang">查看所有 Blog 文章</a></small></p>
+								
+				<div class="" id="latestblogs">
+					<div style="width: 100%;"><center><div class="button contact-button" title="" onclick="getblogart();"><img style="width:0px;height:21px;;margin-left:0;margin-right:0;padding-left:0;padding-right:0" class="contact-img" src="/src/img/contact-icons/favicon.PNG">加载 Blog 文章</div><br /><small>加载此区块可能需要一些时间。页面元素将暂停响应。</small></center></div>
+					
+				</div>
+			<!-- </div> -->
+			
+			<!-- <div class="card rightcard"> -->
+				<h2 class="card-h2">关于我</h2>
+				<div>
+					
+					<table class="mytable"><tr><td valign="top">
+						<img class="button" id="myavatar" src="/src/img/nick.jpg" onclick="alert('别戳了，这儿什么都没有');">	
+					</td><td class="myinfo">
+						<h2 style="margin-top: 4px;margin-bottom: -5px;">阿狗爱骨头</h2>
+						<p>高三电脑菜鸡一枚</p>
+						<p>啥都不懂，啥都会一点</p>
+						<p>刚接触二次元<black>重度魔禁厨</black></p>
+						<p>用电脑之路起源于PowerPoint</p>
+						<p>想不出来写什么了……</p>
+						</td>
+					</tr></table>
+					<div id="contactways">
+						<div class="spinner">
+							<div class="rect1"></div>
+							<div class="rect2"></div>
+							<div class="rect3"></div>
+							<div class="rect4"></div>
+							<div class="rect5"></div>
+						</div>
+					</div>
+				</div>
+				<script>
+					showad(0,"100%","150px","margin-bottom:20px;");
+				</script>
+			</div>
+			
+			<div class="card rightcard">
+				<h2 class="card-h2">友情链接</h2>
+				<p class="card-p"><small><a href="/friends#request" target="blank">申请友情链接</a></small></p>
+				<div class="friends" id="friends">
+					<div class="spinner">
+						<div class="rect1"></div>
+						<div class="rect2"></div>
+						<div class="rect3"></div>
+						<div class="rect4"></div>
+						<div class="rect5"></div>
+					</div>
+				</div>
+			<!-- </div> -->
+			
+			<!-- <div class="card rightcard"> -->
+				<h2 class="card-h2">留言板</h2>
+				<!-- <p class="card-p"><small>对Gitalk的安全性存在争议。如您有顾虑，请<a href="javascript:alert('这个功能被遗忘了')">点击这里</a>前往GitHub评论。</small></p> -->
+				<div id="gitalk">
+					<div class="spinner">
+						<div class="rect1"></div>
+						<div class="rect2"></div>
+						<div class="rect3"></div>
+						<div class="rect4"></div>
+						<div class="rect5"></div>
+					</div>
+				</div>
+			</div>
+			<script>
+				showad(0,"100%","150px","margin-bottom:20px;");
+			</script>
+		</div>
+			
+			
+		<div id="fcont" style="float:left;width:100%"></div>
 	</body>
 		<script src="/src/js/header.js"></script>
 		<script src="/src/js/showindexmainlist.js"></script>
 		<script src="//cdn.junbo.wang/gitalk/create.js"></script>
 		<script src="//cdn.junbo.wang/gitalk/gitalk.min.js"></script>
 		<script>
-			creategitalk('01de9bbd0e209cf8f597','3a84eeb47368b6116a6d8c118d95ac9d91dfde20','229pl','gitalk','Junbo 网址导航首页');
+			creategitalk('01de9bbd0e209cf8f597','3a84eeb47368b6116a6d8c118d95ac9d91dfde20','229pl','gitalk','index');
+			
+			putblock("main", "mainsites");
+			putblock("contact", "contactways");
+			putblock("friends", "friends");
+
 		</script> 
-		
+		<script>
+			fetch('https://v1.hitokoto.cn?c=i')
+			  .then(response => response.json())
+			  .then(data => {
+				const hitokoto = document.getElementById('hitokoto_text')
+				hitokoto.innerText = data.hitokoto
+			  })
+			  .catch(console.error)
+		</script>		  
 		
 
 </html> 

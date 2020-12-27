@@ -60,7 +60,7 @@
     overflow: hidden;
     word-break: break-all;
 	margin-top: 6px;
-	margin-bottom: -2px;
+	margin-bottom: -4px;
 
 }
 
@@ -87,7 +87,7 @@
 
 .fintro{
 	
-	margin: 0px 6px;
+	margin: 1px 6px;
 	font-size: 11px;
 	text-overflow: -o-ellipsis-lastline;
 	overflow: hidden;
